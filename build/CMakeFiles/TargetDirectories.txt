@@ -1,0 +1,3 @@
+/home/devsaint/Рабочий стол/C++ Подготовка/Тестовое Ритейл-Сервис/build/CMakeFiles/TransportTest.dir
+/home/devsaint/Рабочий стол/C++ Подготовка/Тестовое Ритейл-Сервис/build/CMakeFiles/edit_cache.dir
+/home/devsaint/Рабочий стол/C++ Подготовка/Тестовое Ритейл-Сервис/build/CMakeFiles/rebuild_cache.dir

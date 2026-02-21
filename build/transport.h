@@ -25,32 +25,47 @@ class Transport
 
 class Motorcycle : public Transport
 {
+    private:
+        bool hasSidecar;
     public:
         Motorcycle();
         void print() const override;
+        bool getHasSidecar() const;
 };
 
 class Scooter : public Transport
 {
+    private:
+        bool hasElectricMotor;
     public:
         Scooter();
         void print() const override;
+        bool getHasElectricMotor() const;
 }; 
-Retail Service Company
+
 class Car : public Transport
 {
+    private:
+        bool hasAirConditioning;
+        int doorCount;
     public:
         Car();
         void print() const override;
+        bool getHasAirConditioning() const;
+        int getDoorCount() const;
 }; 
 
 class Bus : public Transport
 {
-    int maxPassengers;
+    private:
+        int maxPassengers;
+        bool hasAirConditioning;
     
     public:
         Bus();
         void print() const override;
+        int getMaxPassengers() const;
+        bool getHasAirConditioning() const;
 };
 
 enum class TransportType{
