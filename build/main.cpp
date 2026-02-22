@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <sstream>
-#include "transport.h"
+#include "transportFactory.hpp"
 
 int main(int argc, char* argv[]) {
     
@@ -13,7 +13,7 @@ int main(int argc, char* argv[]) {
 
     std::vector<std::unique_ptr<Transport>> transports;
 
-    for(int i = 1; i < argc; i++){
+    for(size_t i = 1; i < argc; ++i){
         try
         {
             int value = std::stoi(argv[i]);
@@ -27,16 +27,16 @@ int main(int argc, char* argv[]) {
         
     }
 
-    std::cout << "\nИнформация о транспорте:\n" << std::endl;
+    std::cout << "\nИнформация о транспорте:\n";
 
     for (size_t i = 0; i < transports.size(); ++i) {
         if (transports[i]){
             transports[i]->print();
         } else {
-            std::cout << "НЕИЗВЕСТНЫЙ ТИП ТРАНСПОРТА" << std::endl;
+            std::cout << "НЕИЗВЕСТНЫЙ ТИП ТРАНСПОРТА\n";
         }
 
-        std::cout << std::endl;
+        std::cout << "\n";
     }
 
     return 0;
